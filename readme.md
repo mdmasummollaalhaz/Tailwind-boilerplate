@@ -39,3 +39,18 @@ export default {
 ### configure tailwind
 There is a `tailwind.config.js` file with `purge` instructions and extra colors, feel free to customize it according to your need
 
+
+### Add pages for build/publish
+Just add the page in `vite.config.js` file
+```javascript
+build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                another: resolve(__dirname, 'another.html'), // Extra page
+                about: resolve(__dirname, 'about.html') // Extra page
+            }
+        }
+    }
+
+```
