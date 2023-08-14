@@ -47,7 +47,7 @@ build: {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                another: resolve(__dirname, 'another.html'), // Extra page
+                another: resolve(__dirname, 'nextpage.html'), // Extra page
                 about: resolve(__dirname, 'about.html') // Extra page
             }
         }
